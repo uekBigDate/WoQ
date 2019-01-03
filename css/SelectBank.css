@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding:0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: block;
+    border: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+body{
+    background: #fafafa;
+}
+header{
+    width: 100%;
+    height: 2.75rem;
+    padding: 0 0.24rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.back{
+    width: 0.24rem;
+    height: 0.2rem;
+    margin-top: 0.64rem;
+}
+.back img{
+    display: block;
+    width: 0.24rem;
+}
+header h1{
+    font-size: 0.55rem;
+    margin: 0.25rem 0;
+}
+.consume{
+    width: 100%;
+    height: 0.86rem;
+    background: #f5f5f5;
+    border-radius: 0.05rem;
+}
+.zf_sum{
+    font-size: 0.21rem;
+    line-height: 0.7rem;
+    color: #b0b0b0;
+    position: relative;
+    padding-left: 0.32rem;
+    float: left;
+}
+.zf_sum:before{
+    content: '';
+    width: 0.08rem;
+    height: 0.08rem;
+    border-radius: 50%;
+    background:#fe5479;
+    position: absolute;
+    top:0.3rem;
+    left: 0.12rem;
+}
+.consume .rmb{
+    font-size: 0.17rem;
+    color: #ffbecc;
+    float: right;
+    line-height: 0.7rem;
+    margin-right: 0.25rem;
+}
+.consume .rmb span{
+    font-size: 0.32rem;
+    color: #ff426b;
+}
+section{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    height: 4.34rem;
+    border-bottom: 0.01rem dashed #ededed;
+}
+.bank{
+    width: 6.54rem;
+    height: 3.87rem;
+    margin: 0.48rem auto 0;
+}
+.bank_card{
+    width: 100%;
+    height: 1.82rem;
+    background: #179fff;
+    margin-bottom:0.24rem;
+    border-radius: 0.05rem;
+    padding: 0.3rem;
+    box-sizing: border-box;
+}
+.bank_top{
+    height: 0.37rem;
+}
+.bank_top img{
+    display: block;
+    width: 0.37rem;
+    height: 0.37rem;
+    float: left;
+}
+.bank_top h5{
+    font-size: 0.2rem;
+    color: #fff;
+    margin-left: 0.15rem;
+    float: left;
+    line-height: 0.37rem;
+}
+.bank_card h6{
+    font-size:0.24rem;
+    color: #fff;
+    margin: 0.2rem 0 0.27rem 0.51rem;
+}
+.bank_card h6 span{
+    color: #74caff;
+}
+.zf_order{
+    height: 0.22rem;
+    overflow: hidden;
+    margin-left: 0.51rem;
+}
+.zf_order .cle{
+    width: 0.07rem;
+    height: 0.07rem;
+    border-radius: 50%;
+    background: #fff;
+    margin-top: 0.08rem;
+    float: left;
+    margin-right: 0.05rem;
+}
+.zf_order span{
+    float: left;
+    font-size: 0.22rem;
+    color: #74caff;
+    line-height: 0.22rem;
+    margin-left: 0.05rem;
+    margin-right: 0.1rem;
+}
+.bg{
+    background: #2dd5ac;
+}
+.bg1{
+    background: #e1e1e1;
+}

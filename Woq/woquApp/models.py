@@ -19,3 +19,7 @@ class Review(BaseModel):
     uid = models.ForeignKey(to=User, on_delete=models.CASCADE)
     con = models.CharField(max_length=300, verbose_name='访客回复内容')
     rep = models.CharField(max_length=300, verbose_name='作者回复内容', default='')
+
+class Info(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    nickname = models.CharField(max_length=20, verbose_name='用户昵称')

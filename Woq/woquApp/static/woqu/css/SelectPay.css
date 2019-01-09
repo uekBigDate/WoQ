@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding:0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: block;
+    border: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+body{
+    background: #fafafa;
+    padding: 0 0.24rem;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 2.75rem;
+    overflow: hidden;
+}
+.back{
+    width: 0.24rem;
+    height: 0.2rem;
+    margin-top: 0.64rem;
+}
+.back img{
+    display: block;
+    width: 0.24rem;
+}
+header h1{
+    font-size: 0.55rem;
+    margin: 0.25rem 0;
+}
+.consume{
+    width: 100%;
+    height: 0.86rem;
+    background: #f5f5f5;
+    border-radius: 0.05rem;
+}
+.zf_sum{
+    font-size: 0.21rem;
+    line-height: 0.7rem;
+    color: #b0b0b0;
+    position: relative;
+    padding-left: 0.32rem;
+    float: left;
+}
+.zf_sum:before{
+    content: '';
+    width: 0.08rem;
+    height: 0.08rem;
+    border-radius: 50%;
+    background:#fe5479;
+    position: absolute;
+    top:0.3rem;
+    left: 0.12rem;
+}
+.consume .rmb{
+    font-size: 0.17rem;
+    color: #ffbecc;
+    float: right;
+    line-height: 0.7rem;
+    margin-right: 0.25rem;
+}
+.consume .rmb span{
+    font-size: 0.32rem;
+    color: #ff426b;
+}
+main{
+    width: 100%;
+    height: 100%;
+    margin-top: 0.36rem;
+}
+.select{
+    width: 7.01rem;
+    /*background: #20d81f;*/
+    margin: 0 auto;
+}
+.select h6{
+    font-size: 0.23rem;
+    color: #000;
+    position: relative;
+    padding-left: 0.21rem;
+}
+.select h6:before{
+    width: 0.08rem;
+    height: 0.08rem;
+    border-radius: 50%;
+    content: '';
+    position: absolute;
+    background:#ffae61;
+    top: 0.13rem;
+    left: 0;
+}
+.zf_way{
+    width: 100%;
+    height:3.39rem;
+    margin-top: 0.24rem;
+    display: flex;
+    justify-content: space-between;
+}
+.pay{
+    width: 3.38rem;
+    height: 3.39rem;
+    border-radius: 0.05rem;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0.5rem 0.01rem rgba(0,0,0,0.2);
+}
+.pay .alipay{
+    display: block;
+    height: 0.75rem;
+    background: url("../img/icon (38).png") no-repeat center;
+    background-size: contain;
+    margin: 0.9rem 0 0.28rem;
+}
+.pay h4{
+    font-size: 0.25rem;
+    color: #8d8d8d;
+    text-align: center;
+    margin-bottom: 0.14rem;
+}
+.pay h5{
+    font-size: 0.15rem;
+    color:#eee;
+    text-align: center;
+}
+.pay .wachat{
+    background: url("../img/icon (32).png") no-repeat center;
+    background-size: contain;
+}
+.other{
+    width:100%;
+    height: 1.14rem;
+    background: #fff;
+    border-radius: 0.05rem;
+    margin-top:0.24rem;
+    padding: 0 0.24rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 0 0 0.3rem 0.01rem rgba(0,0,0,0.2);
+}
+.logo{
+    width: 0.65rem;
+    height: 0.65rem;
+    border-radius: 50%;
+    margin-top: 0.24rem;
+    float: left;
+}
+.logo img{
+    display: block;
+    width: 0.65rem;
+    height: 0.65rem;
+}
+.other span{
+    float: left;
+    font-size: 0.21rem;
+    color: #000;
+    line-height: 1.14rem;
+    margin-left: 0.36rem;
+}
+.num{
+    width: 0.75rem;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    background:#ffecf0;
+    float: right;
+    text-align: center;
+    line-height: 0.5rem;
+    font-size: 0.18rem;
+    margin-top: 0.32rem;
+    color: #ff426b;
+}

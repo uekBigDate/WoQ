@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="{% static 'woqu/js/jQuery.js' %}"></script>
+    <script src="{% static 'woqu/js/rem.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'woqu/css/login.css' %}">
+    <title>登录页面</title>
+</head>
+<style>
+    label{
+        font-size:0.3rem;
+        margin-left:0.35rem;
+    }
+    #id_name{
+        width: 4.74rem;
+        height: 0.8rem;
+        outline: none;
+        border: none;
+        text-indent: 0.1rem;
+        margin-left: 0.1rem;
+    }
+    #id_password{
+        width: 4.74rem;
+        height: 0.8rem;
+        outline: none;
+        border: none;
+        text-indent: 0.1rem;
+        margin-left: 0.1rem;
+        margin-top:-0.9rem;
+    }
+    .loss_psw{
+        margin-top:0.85rem;
+    }
+    .bottom{
+        margin-top:0.3rem;
+    }
+    .login_box ul{
+    width:2rem;
+    height:0.3rem;
+    padding:0;
+    margin: 0 auto;
+    background:none;
+    }
+    .login_box ul li{
+        width:auto;
+        height:0.3rem;
+        font-size:0.2rem;
+        line-height:0.3rem;
+        color:red;
+        text-align:center;
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="main_side">
+            <div class="register">
+                <a href="{% url 'woquApp:register' %}" class="register_btn">注册</a>
+            </div>
+            <div class="imgbox">
+                <img src="{% static 'woqu/img/icon%20(7).png' %}" alt="">
+            </div>
+            <h4>Fun friend</h4>
+            <h5 style="font-weight: bold">让聊天不尴尬 · 让玩耍不过站</h5>
+            <div class="login_box" style="margin-top:0.3rem">
+                <form action="{% url 'woquApp:login' %}" method="post">
+                    {% csrf_token %}
+                    {{ form }}
+
+                    <button id="btn">立即登录</button>
+                </form>
+            </div>
+            <div class="loss_psw">
+                <span>·</span>&nbsp;密码丢失 点这里
+            </div>
+            <ul class="word_line">
+                <li>
+                    <span></span>
+                </li>
+                <li>第三方登录</li>
+                <li>
+                    <span></span>
+                </li>
+            </ul>
+            <ul class="bottom">
+                <li><img src="{% static 'woqu/img/loginQQ.png' %}" alt=""></li>
+                <li><img src="{% static 'woqu/img/loginWX.png' %}" alt=""></li>
+                <li><img src="{% static 'woqu/img/loginWB.png' %}" alt=""></li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+    let btn = $("#btn");
+    let password=$('[name=password]');
+    password.bind('input propertychange',function() {
+        btn.css("background","-webkit-linear-gradient(left,#ff9682,#ff426b)");
+        btn.css("color","white");
+    });
+</script>
+</html>

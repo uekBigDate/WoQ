@@ -1,0 +1,181 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: block;
+    border: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+.pay{
+    width: 100%;
+    height: 13.34rem;
+    background: rgba(0,0,0,0.2);
+    position: relative;
+}
+.bot{
+    width: 100%;
+    height: 4.97rem;
+    border-radius: 0.05rem;
+    position: absolute;
+    bottom:0;
+    left: 0;
+}
+.cancel{
+    width: 0.35rem;
+    height: 0.35rem;
+    border-radius: 50%;
+    border:0.01rem solid #696969;
+    margin: 0 auto 0.23rem;
+    font-size: 0.15rem;
+    color: #fff;
+    text-align: center;
+}
+.case{
+    width: 6.54rem;
+    height: 4.37rem;
+    border-radius: 0.05rem;
+    background: #fff;
+    margin:0 auto;
+}
+.case_top{
+    width: 100%;
+    height: 1.18rem;
+    border-bottom: 0.02rem solid #eee;
+}
+.case_top p{
+    width: 0.7rem;
+    height: 0.7rem;
+    margin: 0 auto;
+}
+.case_top p img{
+    width: 0.7rem;
+    height: 0.7rem;
+}
+.zf_money{
+    width:100%;
+    height: 1.69rem;
+    border-bottom: 0.02rem solid #eee;
+    font-size: 0.25rem;
+    color: #b5b5b5;
+    text-align: center;
+    overflow: hidden;
+}
+.zf_money p{
+    font-size: 0.24rem;
+    color: #fdbfc9;
+    margin: 0.37rem 0 0.25rem;
+    text-align: center;
+}
+.zf_money p span{
+    font-size: 0.46rem;
+    color: #ff426b;
+}
+.button{
+    width: 5.18rem;
+    height: 0.71rem;
+    background-image: -webkit-linear-gradient(left,#ff4fa2,#ff426c);
+    border-radius: 0.05rem;
+    margin-left:0.64rem;
+    border: none;
+    cursor: pointer;
+}
+/*支付密码*/
+.key{
+    width: 100%;
+    height: 13.34rem;
+    background: rgba(0,0,0,0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.pass{
+    width: 6.53rem;
+    height: 7.72rem;
+    background: url("../img/icon(42).png") no-repeat center;
+    background-size: cover;
+    position: absolute;
+    bottom: 0.4rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Qian{
+    width: 100%;
+    height: 1.57rem;
+    padding-top: 0.3rem;
+    font-size: 0.25rem;
+    color: #b5b5b5;
+    text-align: center;
+}
+
+.Qian p{
+    font-size: 0.24rem;
+    color: #fdbfc9;
+    margin: 0.37rem 0 0.25rem;
+    text-align: center;
+}
+.Qian p span{
+    font-size: 0.46rem;
+    color: #ff426b;
+}
+.angle{
+    width: 6.08rem;
+    height: 0.7rem;
+    background: url("../img/icon(43).png") no-repeat center;
+    background-size:contain;
+    margin-top: 0.17rem;
+}
+.pass ul{
+    width: 5rem;
+    height: 0.8rem;
+    /*background: #20d81f;*/
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.pass ul li{
+    width: 0.5rem;
+    height: 0.7rem;
+    border-bottom: 0.06rem solid #e1e1e1;
+}
+.pass ul li.point{
+    background: url("../img/icon(44).png") no-repeat center;
+    background-size: 0.2rem 0.2rem;
+}
+.keyboard{
+    width: 100%;
+    height: 4.28rem;
+    background: #dcdfe5;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    padding: 0.09rem 0.12rem;
+    box-sizing: border-box;
+}
+.keyboard ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.keyboard ul li{
+    width:2.35rem;
+    height: 0.94rem;
+    border-radius: 0.05rem;
+    background: white;
+    font-size: 0.36rem;
+    text-align: center;
+    margin-bottom: 0.1rem;
+    font-weight: bold;
+}
+.keyboard ul li a{
+    display:block;
+    line-height:0.94rem;
+    color: #000;
+}

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>详情</title>
+    {% load static %}
+    <script src="{% static 'woqu/js/jQuery.js' %}"></script>
+    <script src="{% static 'woqu/js/rem.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'woqu/css/wx_detail.css' %}">
+</head>
+<body>
+    <div class="bg">
+        <header>
+            <a href="{% url 'woquApp:zhuye' %}"><div class="icon"></div></a>
+        </header>
+        <nav>
+            <h1>听说凑齐九张图 就可以召唤神龙了</h1>
+            <div class="pic">
+                <img src="{% static 'woqu/img/11_10.png' %}" alt="">
+            </div>
+            <div class="tubiao">
+                <div class="circle"></div>
+                <h1>41分钟前</h1>
+                <ul>
+                    <li>
+                        <img src="{% static 'woqu/img/icon (21).png' %}" alt="">
+                        <h2>234</h2>
+                    </li>
+                    <li>
+                        <img src="{% static 'woqu/img/xin.png' %}" alt="">
+                        <h2>234</h2>
+                    </li>
+                    <li>
+                        <img src="{% static 'woqu/img/33.png' %}" alt="">
+
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <h1>最新评论</h1>
+            <ul>
+                {% for item in comment %}
+                <li>
+                    <div class="left">
+                        <img src="{% static 'woqu/img/图层12.png' %}" alt="">
+                    </div>
+                    <div class="right">
+                        <div class="top">
+                            <h1 style="padding: 0;">{{ username }}</h1>
+                            <div class="time">
+                                <div class="circle"></div>
+                                <h1>{{ item.c_time }}</h1>
+                            </div>
+                        </div>
+
+                        <h2>{{ item.con }}</h2>
+                        <button>回复</button>
+                    </div>
+                </li>
+                {% endfor %}
+
+            </ul>
+        </main>
+        <footer>
+            <img src="{% static 'woqu/img/组7.png' %}" alt="">
+            <a href="{% url 'woquApp:comment' %}"><input type="text" placeholder="说出您想要说的话"></a>
+            <img src="{% static 'woqu/img/组8.png' %}" alt="">
+            <img src="{% static 'woqu/img/组9.png' %}" alt="">
+        </footer>
+
+
+    </div>
+</body>
+</html>

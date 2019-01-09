@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'woqu/css/register.css' %}">
+	<script src="{% static 'woqu/js/jQuery.js' %}"></script>
+	<script src="{% static 'woqu/js/rem.js' %}"></script>
+</head>
+<style>
+	label{
+		display:none;
+	}
+</style>
+<body>
+	<div class="main">
+		<div class="icon-person">
+			<img src="{% static 'woqu/img/icon-person.png' %}" alt="">
+		</div>
+		<div class="phone-box">
+			<form action="/register/" method="post" autocomplete=off>
+				<div class="input-box">
+					<div class="phone">
+						<img src="{% static 'woqu/img/icon (23).png' %}" alt="">
+						<span>+86</span>
+					</div>
+					{% csrf_token %}
+            		{{ form }}
+					<!--<input type="text" placeholder="请在此填写您的手机号码">-->
+					<div class="kstx-btn">
+						快速填写
+					</div>
+				</div>
+				<!--<div class="input-box">-->
+					<!--<div class="verification-code">-->
+						<!--<img src="{% static 'woqu/img/icon (24).png' %}" alt="">-->
+					<!--</div>-->
+					<!--<input type="text" placeholder="请填写密码完成验证">-->
+					<!--<div class="kstx-btn">-->
+						<!--一键获取-->
+					<!--</div>-->
+				<!--</div>-->
+				<a class="next-btn" href="{% url 'woquApp:register1' %}">
+					<button type="submit" id="rgsbtn">下一步</button>
+				</a>
+			</form>
+		</div>
+
+	</div>
+</body>
+<script>
+	$("#rgsbtn").click(function(){
+		len=0
+		phone=$("input[name='name']").val()
+		len=phone.length
+		if(phone!="" ){
+			if(len==11){
+				localStorage.setItem("tel",phone);
+			}
+
+		}
+	})
+
+</script>
+</html>

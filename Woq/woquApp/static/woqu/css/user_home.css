@@ -1,0 +1,185 @@
+@import "base.css";
+body{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+header{
+    width: 100%;
+    height: .88rem;
+    background-color: rgba(0,0,0,0);
+    position: fixed;
+    top: 0;
+}
+footer{
+    width: 100%;
+    height: 1.1rem;
+    background-color: rgba(42,50,61,.3);
+    position: fixed;
+    bottom: 0;
+}
+
+
+.back_index{
+    display: block;
+    width: .44rem;
+    height: .88rem;
+    background: url("../img/icon (29).png")no-repeat center/.2rem;
+    margin-left: .24rem;
+}
+.home{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    overflow-y: scroll;
+    padding-bottom: 1.1rem;
+    box-sizing: border-box;
+}
+.home::-webkit-scrollbar {
+    display: none;
+}
+.home_head{
+    width: 100%;
+    height: 9.45rem;
+    background-color: #e0e0e0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home_head>img{
+    width: 100%;
+    height: auto;
+}
+.user_info{
+    width: 100%;
+    padding: .36rem .24rem;
+    box-sizing: border-box;
+    border-bottom: .02rem rgba(0,0,0,.05) dashed;
+}
+.info_base{
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.b_left{
+    width: calc(100% - 2.32rem);
+}
+.b_right{
+    width: 2.32rem;
+    height: .98rem;
+    display: flex;
+    justify-content: space-between;
+}
+.b_right>div{
+    width: .98rem;
+    height: .98rem;
+    border-radius: 50%;
+
+}
+.b_right>div:first-child{
+    background: url("../img/icon (2).png")no-repeat center/100%;
+}
+.b_right>div:last-child{
+     background: url("../img/icon (34).png")no-repeat center/100%;
+ }
+.username{
+    font-size: .42rem;
+    font-family: SanFranciscoDisplay;
+    color: rgba(0,0,0,.8);
+}
+.address{
+    height: .22rem;
+    font-size: .2rem;
+    display: flex;
+    align-items: center;
+    margin-top: .24rem;
+}
+.address_icon{
+    width: .22rem;
+    height: .22rem;
+    background: url("../img/icon (28).png")no-repeat center/.22rem .22rem;
+    margin-right: .12rem;
+}
+.yellow_cir{
+    width: .08rem;
+    height: .08rem;
+    border-radius: 50%;
+    background-color: #ffc231;
+}
+.usersig{
+    height: .24rem;
+    display: flex;
+    align-items: center;
+    font-size: .24rem;
+    line-height: .24rem;
+    font-family: SanFranciscoDisplay;
+    color: rgba(0,0,0,.8);
+    margin-top: .24rem;
+}
+.sig_txt{
+    font-size: .22rem;
+    color: #afafaf;
+    text-indent: .2rem;
+    margin-top: .1rem;
+}
+.tag{
+    height: .57rem;
+    margin: .24rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.tag>div{
+    width: .86rem;
+    height: .57rem;
+    border-radius: .28rem;
+    margin-right: .17rem;
+    font-size: .22rem;
+    line-height: .57rem;
+    text-align: center;
+    font-weight: 600;
+}
+.tag>div>img{
+    width: .86rem;
+    height: .57rem;
+}
+.tag_age{
+    background: -webkit-linear-gradient(top,#4482ff,#44a8ff);
+    color: #fff;
+}
+.self_tag{
+    margin: .12rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.self_tag>div{
+    height: .57rem;
+    border-radius: .28rem;
+    margin-right: .17rem;
+    font-size: .22rem;
+    line-height: .57rem;
+    text-align: center;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0 .3rem;
+}
+.pink{
+    background-color: rgba(193,98,230,0.1);
+    color: #c162e6;
+}
+.blue{
+    background-color: rgba(98,175,254,.1);
+    color: #62affe;
+}
+.red{
+    background-color: rgba(255,158,195,.1);
+    color: #ff9ec3;
+}
+.green{
+    background-color: rgba(105,210,156,.1);
+    color: #69d29c;
+}

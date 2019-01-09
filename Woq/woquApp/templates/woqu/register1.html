@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'woqu/css/register.css' %}">
+	<script src="{% static 'woqu/js/jQuery.js' %}"></script>
+	<script src="{% static 'woqu/js/rem.js' %}"></script>
+</head>
+<style>
+    .errorlist{
+		position: fixed;
+		font-size: 0.28rem;
+		color: red;
+	}
+</style>
+<body>
+	<div class="main">
+		<div class="back-box">
+			<a href="{% url 'woquApp:register' %}">
+				<img src="{% static 'woqu/img/icon (29).png' %}" alt="">
+			</a>
+		</div>
+		<div class="tel-box">
+			<p>
+				<span class="circle"></span>
+				您当前的手机号码设置为
+			</p>
+			<p id="tel">
+
+			</p>
+		</div>
+		<div class="tel-set">
+			<span>
+				请为您的账号设置用户名以及密码
+			</span>
+			<span class="bar-box">
+				<span class="bar"></span>
+			</span>
+		</div>
+		<div class="phone-box user-pass">
+			<form action="/register1/" method="post" autocomplete=off>
+				<input type="hidden" id="phone" value="" name="phone">
+				{% csrf_token %}
+				{% for value in form.errors.values %}
+                    {{ value }}
+                {% endfor %}
+
+				{{ form.errors }}
+				<div class="input-box">
+					<div class="verification-code">
+						<img src="{% static 'woqu/img/user.png' %}" alt="">
+					</div>
+					<!--<input type="text" placeholder="请填写您的用户名">-->
+					{{form.name}}
+				</div>
+				<div class="input-box">
+					<div class="verification-code">
+						<img src="{% static 'woqu/img/icon (24).png' %}" alt="">
+					</div>
+					<!--<input type="text" placeholder="请在此设置您的密码">-->
+					{{form.password}}
+
+				</div>
+				<div class="input-box">
+					<div class="verification-code">
+						<img src="{% static 'woqu/img/icon (24).png' %}" alt="">
+					</div>
+					<!--<input type="text" placeholder="请再次输入您的密码">-->
+					{{form.password2}}
+				</div>
+
+				<a class="next-btn" href="javascripts:;">
+					<button type="submit" id="rgsbtn">确定</button>
+				</a>
+			</form>
+		</div>
+
+	</div>
+</body>
+<script>
+	$("#tel").text(localStorage.getItem("tel"))
+	$("#phone").val(localStorage.getItem("tel"))
+
+</script>
+</html>

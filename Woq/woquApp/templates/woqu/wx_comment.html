@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>详情</title>
+    {% load static %}
+    <script src="{% static 'woqu/js/jQuery.js' %}"></script>
+    <script src="{% static 'woqu/js/rem.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'woqu/css/wx_comment.css' %}">
+</head>
+<body>
+<div class="bg">
+    <header>
+        <a href="{% url 'woquApp:news' %}"><div class="icon"></div></a>
+    </header>
+    <form action="{% url 'woquApp:comment' nid %}" method="post">
+    {% csrf_token %}
+    <main>
+        <div class="text">
+            {{ form.con }}
+            <!--<textarea name="" id="" cols="30" rows="10" class="con"></textarea>-->
+            <h1 class="warning">在此处输出评论内容</h1>
+            <div class="add">
+                <img src="{% static 'woqu/img/组7.png' %}" alt="">
+            </div>
+            <img src="{% static 'woqu/img/icon (6).png' %}" alt="">
+            <img src="{% static 'woqu/img/icon (15).png' %}" alt="">
+        </div>
+        <div class="map">
+            <img src="{% static 'woqu/img/icon (28).png' %}" alt="">
+            <h2>我的位置</h2>
+        </div>
+    </main>
+
+    <footer>
+        <input type="text" placeholder="说出您想要说的话">
+        <button type="submit" class="button"><img src="{% static 'woqu/img/jianpan.png' %}" alt=""></button>
+    </footer>
+    </form>
+
+
+</div>
+</body>
+<script>
+    $(function(){
+        $('.con').focus(function(){
+            $('.warning').css('display','none')
+        });
+        $('.con').blur(function(){
+            $('.warning').css('display','block')
+        })
+        <!--$('.button').click(function(){-->
+        <!--console.log('123')-->
+            <!--$('.con').val("")-->
+        <!--})-->
+    })
+</script>
+</html>

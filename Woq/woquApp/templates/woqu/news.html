@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>发表动态</title>
+    {% load static %}
+    <script src="{% static 'woqu/js/jquery.js' %}"></script>
+    <script src="{% static 'woqu/js/rem.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'woqu/css/wx_comment.css' %}">
+    <link rel="stylesheet" href="{% static 'woqu/css/base.css' %}">
+
+</head>
+<body>
+<div class="bg">
+    <form action="{% url 'woquApp:up_news' %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <header style="display:flex;justify-content: space-between;align-items: center;">
+        <a href="{% url 'woquApp:news' %}"><div class="icon" style="margin:0;"></div></a>
+        <button type="submit" class="_sub" style="font-size:.26rem;">发表</button>
+    </header>
+    <main style="padding:0 .24rem;">
+        <div class="text">
+            <textarea name="con" id="" cols="30" rows="10" placeholder="在此处输入" style="height: 4rem;"></textarea>
+
+            <div class="_show_img" id="img-box" style="overflow:hidden;"></div>
+
+            <div class="add" style="position: relative;">
+                {{ form_img }}
+                <!--<input type="file" name="img_file" multiple class="_sub_file" onchange="lookImg(this)" accept="image/*">-->
+                <img src="{% static 'woqu/img/组7.png' %}" alt="">
+            </div>
+            <img src="{% static 'woqu/img/icon%20(6).png' %}" alt="">
+            <img src="{% static 'woqu/img/icon%20(15).png' %}" alt="" onclick="clean_img()">
+        </div>
+        <div class="map">
+            <img src="{% static 'woqu/img/icon%20(28).png' %}" alt="">
+            <h2>我的位置</h2>
+        </div>
+    </main>
+    </form>
+</div>
+</body>
+<script type="text/javascript">
+
+function lookImg(obj) {
+    var file = obj.files;
+    var reader = new FileReader();
+    for(var j=0;j<file.length;j++){
+        var div;
+        var reader= new FileReader();
+        reader.readAsDataURL(file[j]);
+        reader.onload=function(e){
+            div=document.createElement('div');
+            div.innerHTML='<img src="'+this.result+'" class="xmTanImg"/>';
+            document.getElementById("img-box").appendChild(div);
+        }
+    }
+}
+
+function clean_img(){
+    $('#id_img').val('')
+    $('#img-box').html('')
+}
+
+
+</script>
+</html>

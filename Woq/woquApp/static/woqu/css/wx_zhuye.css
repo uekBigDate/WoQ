@@ -1,0 +1,329 @@
+@import url(../css/base.css);
+.bg{
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left:0;
+    right:0;
+    background: #fafafa;
+    overflow-y: auto;
+}
+header{
+    width: 100%;
+    height: 9.45rem;
+}
+header img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.fanhui{
+    width: 100%;
+    height: .88rem;
+    /*background: #ff426b;*/
+    padding: 0 .24rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.fanhui img{
+    width: .4rem;
+    height: .4rem;
+    margin-top: .22rem;
+    display: block;
+}
+.geren{
+    width: 100%;
+    height: 2rem;
+    margin-top: .3rem;
+    padding: 0 .24rem;
+    box-sizing: border-box;
+}
+.geren .left{
+    width: 4.6rem;
+    height: 100%;
+    float: left;
+}
+.geren .left h1{
+    width: 100%;
+    height: .6rem;
+    font-size: .6rem;
+    color: #565656;
+    line-height: .6rem;
+}
+.geren .left .address{
+    width: 100%;
+    height: .24rem;
+    margin-top: .12rem;
+}
+.geren .left .address .map{
+    width: auto;
+    height: 100%;
+    float: left;
+}
+.geren .left .address .map img{
+    width: .34rem;
+    height: .38rem;
+    display: block;
+    float: left;
+    margin-right: .12rem;
+
+}
+.geren .left .address .map .circle{
+    width: .08rem;
+    height: .08rem;
+    background: #ffc231;
+    border-radius: 50%;
+    float: left;
+    margin: .08rem .12rem 0 0;
+
+}
+.qianming{
+    width: 100%;
+    height: .24rem;
+    margin-top: .24rem;
+
+}
+.qianming .circle{
+    width: .08rem;
+    height: .08rem;
+    background: #ffc231;
+    border-radius: 50%;
+    float: left;
+    margin: .08rem .12rem 0 .12rem;
+}
+.qianming h2{
+    width: auto;
+    height: .24rem;
+    line-height: .24rem;
+    color: #cacaca;
+    float: left;
+    margin-top: .05rem;
+    font-size:.24rem;
+}
+.geren .left .address .map h2{
+    width: auto;
+    height: .24rem;
+    line-height: .24rem;
+    color: #cacaca;
+    float: left;
+    margin-top: .05rem;
+    font-size:.24rem;
+}
+.geren .left h3{
+    width: 100%;
+    height: .24rem;
+    font-size: .24rem;
+    color: #cacaca;
+    padding-left: .3rem;
+    box-sizing: border-box;
+    margin-top: .24rem;
+}
+.geren .right{
+    width: 2.4rem;
+    height: 100%;
+    float: left;
+}
+.geren .right img{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    float: left;
+    margin-top: .4rem;
+}
+.biaoqian{
+    width: 100%;
+    height: .63rem;
+    margin-top: .15rem;
+    padding: 0 .26rem;
+    box-sizing: border-box;
+}
+.biaoqian li{
+    width: .88rem;
+    height: 100%;
+    border-radius: .32rem;
+    margin-right: .18rem;
+    float: left;
+}
+.biaoqian li img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.biaoqian1{
+    margin-top: .2rem;
+}
+.biaoqian1 li{
+    width: auto;
+    padding: 0 .27rem;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: .63rem;
+    font-size: .22rem;
+}
+.display{
+    width: 100%;
+    height: auto;
+    padding: 0 .24rem;
+    box-sizing: border-box;
+
+}
+.display li{
+    width: 100%;
+    height: 5.86rem;
+    border-top: .01rem solid #ededed;
+    padding-top: .32rem;
+    box-sizing: border-box;
+}
+.display li .top{
+    width: 100%;
+    height: 1.15rem;
+}
+.display li .top .head{
+    width: .75rem;
+    height: .75rem;
+    float: left;
+    border-radius: .37rem;
+}
+.display li .top .head img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.display li .top .word{
+    width: 6rem;
+    height: auto;
+    margin-left: .2rem;
+    float: left;
+}
+.display li .top .word h1{
+    width: 100%;
+    height: .32rem;
+    font-size: .32rem;
+    font-weight: normal;
+    line-height: .32rem;
+    color: #ff426b;
+}
+.display li .top .word h2{
+    width: 100%;
+    height: auto;
+    font-size: .22rem;
+    font-weight: normal;
+    line-height: .35rem;
+    color: #b4b4b4;
+    margin-top: .14rem;
+}
+.display li .neirong{
+    width: 6.98rem;
+    height: 3.5rem;
+    margin-top: .2rem;
+}
+.tubiao{
+    width: 100%;
+    height: .74rem;
+    padding: 0 .47rem;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+.tubiao .circle{
+    width: .08rem;
+    height: .08rem;
+    background: #4ed8af;
+    margin-top: .33rem;
+    border-radius: 50%;
+    float: left;
+    margin-right: .1rem;
+}
+.tubiao h1{
+    font-size: .18rem;
+    color: #c7c7c7;
+    line-height: .74rem;
+    font-weight: normal;
+    float: left;
+    width: 2rem;
+    height: 100%;
+
+}
+.tubiao ul{
+    width: 2.4rem;
+    height: 100%;
+    float: right;
+
+}
+.tubiao ul li{
+    width: .75rem;
+    height: 100%;
+    float: left;
+    margin-right: .2rem;
+    padding-top: 0;
+}
+.tubiao ul li:last-child{
+    margin-right: 0;
+    width: .4rem;
+}
+.tubiao ul li img{
+    width: .36rem;
+    height: .36rem;
+    display: block;
+    float: left;
+    margin-top: .2rem;
+}
+.tubiao ul li h2{
+    width: .39rem;
+    float: left;
+    height: .1rem;
+    font-size: .1rem;
+    color: #c6c6c6;
+    line-height: .1rem;
+    margin-top: .3rem;
+    font-weight: normal;
+}
+.share{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(251,251,251,0.8);
+    display: none;
+}
+.share ul{
+    width: 100%;
+    height: 4.7rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: rgba(255,255,255,0.9);
+    padding-left: .47rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+.share ul li{
+    width: 1.3rem;
+    height: 2.1rem;
+    margin-right: .45rem;
+    padding-top: .3rem;
+    box-sizing: border-box;
+
+}
+.share ul li img{
+    width: 100%;
+    height: 1.3rem;
+    border-radius: .50%;
+    display: block;
+
+}
+.share ul li h1{
+    width: 100%;
+    height: .18rem;
+    line-height: .18rem;
+    color: #b8b8b8;
+    margin-top: .2rem;
+    text-align: center;
+    font-size:.18rem;
+}

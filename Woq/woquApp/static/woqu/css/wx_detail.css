@@ -1,0 +1,253 @@
+@import url(../css/base.css);
+.bg{
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left:0;
+    right:0;
+    background: #fafafa;
+}
+header{
+    width: 100%;
+    height: .88rem;
+    background: #ff426b;
+    padding: 0 .24rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+header a{
+    width: .20rem;
+    height: .20rem;
+    margin-top: .34rem;
+    display:block;
+}
+header .icon{
+    width: .20rem;
+    height: .20rem;
+    background: url("../img/icona_03.png")  no-repeat center;
+    background-size: cover;
+
+}
+nav{
+    width: 100%;
+    height: 2.8rem;
+    background: #ff426b;
+}
+nav h1{
+    width: 100%;
+    height: .22rem;
+    font-size: .22rem;
+    line-height: .22rem;
+    padding: 0 .24rem;
+    box-sizing: border-box;
+    font-weight: normal;
+    color: #ffd3da;
+}
+nav .pic{
+    width: 6.53rem;
+    height: 3.44rem;
+    margin-top: .22rem;
+    background: pink;
+    margin-left: .43rem;
+    border-radius: .05rem;
+}
+nav .pic img{
+    width: 100%;
+    height: 100%;
+    display: block;
+
+}
+.tubiao{
+    width: 100%;
+    height: .74rem;
+    padding: 0 .47rem;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+.tubiao .circle{
+    width: .08rem;
+    height: .08rem;
+    background: #4ed8af;
+    margin-top: .33rem;
+    border-radius: 50%;
+    float: left;
+}
+.tubiao h1{
+    font-size: .18rem;
+    color: #c7c7c7;
+    line-height: .74rem;
+    font-weight: normal;
+    float: left;
+    width: 2rem;
+    height: 100%;
+
+}
+.tubiao ul{
+    width: 2.4rem;
+    height: 100%;
+    float: right;
+
+}
+.tubiao ul li{
+    width: .75rem;
+    height: 100%;
+    float: left;
+    margin-right: .2rem;
+}
+.tubiao ul li:last-child{
+    margin-right: 0;
+    width: .4rem;
+}
+.tubiao ul li img{
+    width: .36rem;
+    height: .36rem;
+    display: block;
+    float: left;
+    margin-top: .2rem;
+}
+.tubiao ul li h2{
+    width: .39rem;
+    float: left;
+    height: .1rem;
+    font-size: .1rem;
+    color: #c6c6c6;
+    line-height: .1rem;
+    margin-top: .3rem;
+    font-weight: normal;
+}
+main{
+    height: 7.6rem;
+    width: 100%;
+    overflow-y: auto;
+    border-top: .01rem dashed #ededed;
+    margin-top: 1.85rem;
+    padding-bottom: 1rem;
+}
+main h1{
+    width: 100%;
+    height: .22rem;
+    line-height: .22rem;
+    font-weight: normal;
+    color: #b4b4b4;
+    margin-top: .29rem;
+    padding: 0 .24rem;
+    box-sizing: border-box;
+    font-size:.22rem;
+}
+main ul{
+    width: 100%;
+    height: auto;
+
+}
+main ul li{
+    width: 100%;
+    height: 2.15rem;
+    border-bottom: .01rem dashed #ededed;
+    padding: .34rem .24rem 0;
+    box-sizing: border-box;
+}
+main ul li .left{
+    width: .84rem;
+    height: .84rem;
+    float: left;
+    background: white;
+    border-radius: 50%;
+    overflow: hidden;
+}
+main ul li .left img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+main ul li .right{
+    width: 6rem;
+    height:100%;
+    float: right;
+}
+main ul li .right .top{
+    width: 100%;
+    height: .22rem;
+
+}
+main ul li .right .top h1{
+    color: #c6c6c6;
+    font-size: .22rem;
+    width: auto;
+    height: .22rem;
+    float: left;
+    line-height: .22rem;
+    margin-top: 0;
+    font-size:.22rem;
+}
+main ul li .right .top .time{
+    width: auto;
+    height: .22rem;
+    float: right;
+}
+main ul li .right .top .circle{
+    width: .08rem;
+    height: .08rem;
+    background: #4ed8af;
+    border-radius: 50%;
+    float: left;
+    margin-top: .08rem;
+}
+main ul li .right  h2{
+    color: #969696;
+    font-size: .22rem;
+    width: auto;
+    height: .22rem;
+    line-height: .22rem;
+    margin-top: .24rem;
+    font-size:.24rem;
+}
+main ul li .right button{
+    width: 1rem;
+    height: .5rem;
+    border-radius: .25rem;
+    background: #e7f0fb;
+    color: #4394ff;
+    font-size: .22rem;
+    border: none;
+    outline: none;
+    margin-top: .33rem;
+    display:block;
+}
+footer{
+    width: 100%;
+    height: 1.05rem;
+    background: #ff426b;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 0 .24rem;
+    box-sizing: border-box;
+}
+footer img{
+    margin-top: .14rem;
+    float: left;
+}
+footer a{
+    width: 4.21rem;
+    height: .67rem;
+    margin: .2rem .1rem .2rem .1rem ;
+    float: left;
+    display:block;
+}
+footer a input{
+    width: 4.21rem;
+    height: .67rem;
+    background: #ff426b;
+    border: .03rem solid #ff6c8c;
+    box-sizing: border-box;
+    border-radius: .35rem;
+    outline: none;
+    padding-left:.3rem;
+    display:block;
+
+
+}
+footer input::-webkit-input-placeholder{
+    color: white;
+}

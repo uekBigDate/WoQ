@@ -5,26 +5,80 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>动态</title>
-    <link rel="stylesheet" href="css/dynamic.css">
-    <script src="js/rem.js"></script>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/dynamic.css' %}">
+    <script src="{% static 'js/rem.js' %}"></script>
 </head>
 <body>
 
 <header></header>
 <section class="dynamic">
-    <main class="user_box">
+    <!--<main class="user_box">-->
+        <!--<div class="box_txt">-->
+            <!--<img src="img/head.jpg" alt="" class="user_head">-->
+            <!--<div class="user_des">-->
+                <!--<span class="user_name">貂蝉</span>-->
+                <!--<p class="user_txt">小强，要努力变乔！fit</p>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="box_video">-->
+            <!--<video src="img/video.mp4" class="videos" controls="controls"></video>-->
+        <!--</div>-->
+        <!--<div class="box_state">-->
+            <!--<div class="dyn_time"><div></div><span>41分钟前</span></div>-->
+            <!--<div class="dyn_work">-->
+                <!--<div class="workes"><div class="works_icon like"></div><span>365</span></div>-->
+                <!--<div class="workes"><div class="works_icon talk"></div><span>365</span></div>-->
+                <!--<div class="workes"><div class="works_icon share"></div></div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</main>-->
+
+    <!--<main class="user_box">-->
+        <!--<div class="box_txt">-->
+            <!--<img src="img/head.jpg" alt="" class="user_head">-->
+            <!--<div class="user_des">-->
+                <!--<span class="user_name">貂蝉</span>-->
+                <!--<p class="user_txt">小强，要努力变乔！fit</p>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--&lt;!&ndash;<div class="box_video"></div>&ndash;&gt;-->
+        <!--<div class="box_img">-->
+            <!--<div><img src="img/lovely.png" alt="" class="dyn_imgs"></div>-->
+            <!--<div><img src="img/lovely.png" alt="" class="dyn_imgs"></div>-->
+            <!--<div><img src="img/lovely.png" alt="" class="dyn_imgs"></div>-->
+            <!--<div><img src="img/lovely.png" alt="" class="dyn_imgs"></div>-->
+            <!--<div><img src="img/lovely.png" alt="" class="dyn_imgs"></div>-->
+            <!--<div><img src="img/lovely.png" alt="" class="dyn_imgs"></div>-->
+            <!--<div><img src="img/lovely.png" alt="" class="dyn_imgs"></div>-->
+            <!--<div><img src="img/lovely.png" alt="" class="dyn_imgs"></div>-->
+        <!--</div>-->
+        <!--<div class="box_state">-->
+            <!--<div class="dyn_time"><div></div><span>41分钟前</span></div>-->
+            <!--<div class="dyn_work">-->
+                <!--<div class="workes"><div class="works_icon like"></div><span>365</span></div>-->
+                <!--<div class="workes"><div class="works_icon talk"></div><span>365</span></div>-->
+                <!--<div class="workes"><div class="works_icon share"></div></div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</main>-->
+    {% for dat,val in data.items %}
+        <main class="user_box">
         <div class="box_txt">
-            <img src="img/head.jpg" alt="" class="user_head">
+            <img src="/media/{{ val.2.0 }}" alt="" class="user_head">
             <div class="user_des">
-                <span class="user_name">貂蝉</span>
-                <p class="user_txt">小强，要努力变乔！fit</p>
+                <span class="user_name">{{ val.0.username }}</span>
+                <p class="user_txt">{{ val.1 }}</p>
             </div>
         </div>
-        <div class="box_video">
-            <video src="img/video.mp4" class="videos" controls="controls"></video>
+        <!--<div class="box_video"></div>-->
+        <div class="box_img">
+            {% for img in val.2 %}
+            <div><img src="/media/{{ img }}" alt="" class="dyn_imgs"></div>
+            {% endfor %}
         </div>
         <div class="box_state">
-            <div class="dyn_time"><div></div><span>41分钟前</span></div>
+            <div class="dyn_time"><div></div><span>{{ val.3 }}</span></div>
             <div class="dyn_work">
                 <div class="workes"><div class="works_icon like"></div><span>365</span></div>
                 <div class="workes"><div class="works_icon talk"></div><span>365</span></div>
@@ -33,36 +87,11 @@
         </div>
     </main>
 
-    <main class="user_box">
-        <div class="box_txt">
-            <img src="img/head.jpg" alt="" class="user_head">
-            <div class="user_des">
-                <span class="user_name">貂蝉</span>
-                <p class="user_txt">小强，要努力变乔！fit</p>
-            </div>
-        </div>
-        <!--<div class="box_video"></div>-->
-        <div class="box_img">
-            <div><img src="img/lovely.png" alt="" class="dyn_imgs"></div>
-            <div><img src="img/lovely.png" alt="" class="dyn_imgs"></div>
-            <div><img src="img/lovely.png" alt="" class="dyn_imgs"></div>
-            <div><img src="img/lovely.png" alt="" class="dyn_imgs"></div>
-            <div><img src="img/lovely.png" alt="" class="dyn_imgs"></div>
-            <div><img src="img/lovely.png" alt="" class="dyn_imgs"></div>
-            <div><img src="img/lovely.png" alt="" class="dyn_imgs"></div>
-            <div><img src="img/lovely.png" alt="" class="dyn_imgs"></div>
-        </div>
-        <div class="box_state">
-            <div class="dyn_time"><div></div><span>41分钟前</span></div>
-            <div class="dyn_work">
-                <div class="workes"><div class="works_icon like"></div><span>365</span></div>
-                <div class="workes"><div class="works_icon talk"></div><span>365</span></div>
-                <div class="workes"><div class="works_icon share"></div></div>
-            </div>
-        </div>
-    </main>
+    {% endfor %}
+
+    <div class="new_dyn"><a href="{% url 'woquApp:up_news' %}" style="width:100%;height:100%;display:block;"></a></div>
+
 </section>
-<div class="new_dyn"></div>
 <footer></footer>
 
 </body>
